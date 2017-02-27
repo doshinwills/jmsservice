@@ -1,0 +1,41 @@
+mvn archetype:generate \
+-DarchetypeGroupId=org.codehaus.mojo.archetypes \
+-DarchetypeArtifactId=pom-root \
+-DarchetypeVersion=RELEASE
+
+com.doshin.service
+jmsservice
+1.0
+com.doshin.service.jms
+
+mvn archetype:generate \
+-DarchetypeGroupId=org.apache.maven.archetypes \
+-DarchetypeArtifactId=maven-archetype-quickstart \
+-DarchetypeVersion=RELEASE
+
+com.doshin.service
+jmsserviceapi
+com.doshin.service.jms.api
+
+com.doshin.service
+jmsbao
+com.doshin.service.jms.bao
+
+com.doshin.service
+jmsdao
+com.doshin.service.jms.dao
+
+com.doshin.service
+jmsserviceimpl
+com.doshin.service.jms.impl
+
+
+mvn archetype:generate \
+-DarchetypeGroupId=org.apache.maven.archetypes \
+-DarchetypeArtifactId=maven-archetype-webapp \
+-DarchetypeVersion=RELEASE
+
+
+com.doshin.service
+jmsserviceweb
+com.doshin.service.jms.web

@@ -1,0 +1,38 @@
+
+http://localhost:8080/jmsserviceweb/rest/queue/findByQueueId/1
+
+http://localhost:8080/jmsserviceweb/rest/queue/save
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<queue>
+	<callbackUrl>www.google.com</callbackUrl>
+	<createdOn>2017-02-24T16:55:12.290-08:00</createdOn>
+	<name>Que1</name>
+	<serviceUrl>www.google.com</serviceUrl>
+	<updatedOn>2017-02-24T16:55:12.290-08:00</updatedOn>
+</queue>
+
+
+http://localhost:8080/jmsserviceweb/rest/request/findByRequestId/1
+
+http://localhost:8080/jmsserviceweb/rest/request/save
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<request>
+	<createdOn>2017-02-24T00:00:00-08:00</createdOn>
+	<queue>
+		<callbackUrl>www.google.com</callbackUrl>
+		<createdOn>2017-02-24T00:00:00-08:00</createdOn>
+		<name>Que1</name>
+		<queueId>1</queueId>
+		<serviceUrl>www.google.com</serviceUrl>
+		<updatedOn>2017-02-24T00:00:00-08:00</updatedOn>
+	</queue>
+	<refId>123</refId>
+	<request>req</request>
+	<requestContent>xml</requestContent>
+	<response>resr</response>
+	<status>
+		<name>SEND</name>
+		<statusId>3</statusId>
+	</status>
+	<updatedOn>2017-02-24T00:00:00-08:00</updatedOn>
+</request>

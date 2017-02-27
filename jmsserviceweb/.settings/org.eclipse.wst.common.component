@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="jmsserviceweb">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="jmsserviceimpl-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsserviceimpl/jmsserviceimpl">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jmsserviceapi-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsserviceapi/jmsserviceapi">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jmsbao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsbao/jmsbao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jmsdao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsdao/jmsdao">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="context-root" value="jmsserviceweb"/>
+        <property name="java-output-path" value="/jmsserviceweb/target/classes"/>
+    </wb-module>
+</project-modules>
