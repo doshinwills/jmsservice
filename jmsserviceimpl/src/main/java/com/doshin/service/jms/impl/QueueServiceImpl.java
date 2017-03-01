@@ -18,7 +18,6 @@ public class QueueServiceImpl implements QueueService{
 
 	@Override
 	public QueueVO save(QueueVO queue) {
-		System.out.println("Doshin");
 		return queueBao.save(queue);
 	}
 

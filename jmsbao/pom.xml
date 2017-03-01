@@ -154,10 +154,6 @@
 		</dependency>
 		<dependency>
 			<groupId>com.doshin.service</groupId>
-			<artifactId>jmsprocessor</artifactId>
-		</dependency>
-		<dependency>
-			<groupId>com.doshin.service</groupId>
 			<artifactId>jmsutil</artifactId>
 		</dependency>
 

@@ -15,6 +15,8 @@ import org.springframework.jms.listener.MessageListenerContainer;
 import org.springframework.jms.support.converter.MessageConverter;
 import org.springframework.jms.support.converter.SimpleMessageConverter;
 
+import com.doshin.service.jms.processor.consumer.SubscriberService;
+
 @Configuration
 @PropertySource(value = { "classpath:application.properties" })
 public class MessagingConfiguration {
@@ -25,7 +27,7 @@ public class MessagingConfiguration {
 	private static final String ORDER_QUEUE = "order-queue";
 	
 	@Autowired
-	MessageReceiver messageReceiver;
+	SubscriberService subscriberService;
 
 	@Bean
 	public ConnectionFactory connectionFactory() {
@@ -62,7 +64,7 @@ public class MessagingConfiguration {
 		DefaultMessageListenerContainer container = new DefaultMessageListenerContainer();
 		container.setConnectionFactory(connectionFactory());
 		container.setDestinationName(ORDER_QUEUE);
-		container.setMessageListener(messageReceiver);
+		container.setMessageListener(subscriberService);
 		return container;
 	}
 

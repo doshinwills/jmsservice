@@ -23,13 +23,19 @@ public class RequestDaoImpli implements RequestDao {
 
 	@Override
 	public RequestDO save(RequestDO request) {
-		getSession().saveOrUpdate(request);
+		Session session = getSession();
+		session.clear();
+		session.persist(request);
+        session.flush();
 		return request;
 	}
 
 	@Override
 	public void update(RequestDO request) {
-		getSession().update(request);
+		Session session = getSession();
+		session.clear();
+        session.update(request);
+        session.flush();
 	}
 
 	@Override

@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @ComponentScan({"com.doshin.service.hibernate","com.doshin.service.jms.bao", 
 	"com.doshin.service.jms.dao", "com.doshin.service.jms.processor.config",
-	"com.doshin.service.jms.processor.producer"})
+	"com.doshin.service.jms.processor.producer", "com.doshin.service.jms.processor.consumer", "com.doshin.service.jms.callback"})
 public class AppConfig{
 
 }

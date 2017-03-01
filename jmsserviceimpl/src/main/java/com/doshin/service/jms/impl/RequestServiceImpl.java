@@ -16,7 +16,6 @@ public class RequestServiceImpl implements RequestService{
 
 	@Override
 	public RequestVO save(RequestVO request) {
-		System.out.println("Doshin");
 		return requestBao.save(request);
 	}
 

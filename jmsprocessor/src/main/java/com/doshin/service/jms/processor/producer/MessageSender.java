@@ -16,11 +16,11 @@ public class MessageSender {
 	@Autowired
 	JmsTemplate jmsTemplate;
 
-	public void sendMessage(final String product) {
+	public void sendMessage(final String request) {
 
 		jmsTemplate.send(new MessageCreator(){
 				public Message createMessage(Session session) throws JMSException{
-					ObjectMessage objectMessage = session.createObjectMessage(product);
+					ObjectMessage objectMessage = session.createObjectMessage(request);
 					return objectMessage;
 				}
 			});

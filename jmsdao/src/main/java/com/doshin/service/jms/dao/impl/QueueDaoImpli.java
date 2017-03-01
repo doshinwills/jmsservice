@@ -35,7 +35,7 @@ public class QueueDaoImpli implements QueueDao {
 
 	public QueueDO findByQueueId(Integer QueueId) {
 		Criteria criteria = getSession().createCriteria(QueueDO.class);
-		criteria.add(Restrictions.eq("QueueId", QueueId));
+		criteria.add(Restrictions.eq("queueId", QueueId));
 		return (QueueDO) criteria.uniqueResult();
 	}
 
