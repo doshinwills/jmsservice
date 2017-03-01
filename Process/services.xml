@@ -36,3 +36,81 @@ http://localhost:8080/jmsserviceweb/rest/request/save
 	</status>
 	<updatedOn>2017-02-24T00:00:00-08:00</updatedOn>
 </request>
+
+<request>
+    <createdOn>2017-02-24T00:00:00-08:00</createdOn>
+    <queue>
+        <queueId>1</queueId>
+    </queue>
+    <refId>123</refId>
+    <request>&lt;?xml version="1.0" encoding="UTF-8" standalone="yes"?&gt;
+&lt;request&gt;
+    &lt;createdOn&gt;2017-02-24T00:00:00-08:00&lt;/createdOn&gt;
+    &lt;queue&gt;
+        &lt;queueId&gt;1&lt;/queueId&gt;
+    &lt;/queue&gt;
+    &lt;refId&gt;123&lt;/refId&gt;
+    &lt;request&gt;req&lt;/request&gt;
+    &lt;requestContent&gt;xml&lt;/requestContent&gt;
+    &lt;requestId&gt;7&lt;/requestId&gt;
+    &lt;response&gt;resr&lt;/response&gt;
+    &lt;status&gt;
+        &lt;statusId&gt;1&lt;/statusId&gt;
+    &lt;/status&gt;
+    &lt;updatedOn&gt;2017-02-24T00:00:00-08:00&lt;/updatedOn&gt;
+&lt;/request&gt;
+</request>
+    <requestContent>xml</requestContent>
+    <response>resr</response>
+    <status>
+        <statusId>1</statusId>
+    </status>
+    <updatedOn>2017-02-24T00:00:00-08:00</updatedOn>
+</request>
+
+
+<request>
+    <createdOn>2017-02-24T00:00:00-08:00</createdOn>
+    <queue>
+        <queueId>4</queueId>
+    </queue>
+    <refId>123</refId>
+    <request>&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot; standalone=&quot;yes&quot;?&gt;
+&lt;user&gt;
+	&lt;createdOn&gt;2017-02-22T00:00:00-08:00&lt;/createdOn&gt;
+	&lt;firstName&gt;Mary Ann&lt;/firstName&gt;
+	&lt;groupList&gt;
+		&lt;createdOn&gt;2017-02-22T00:00:00-08:00&lt;/createdOn&gt;
+		&lt;groupId&gt;1&lt;/groupId&gt;
+		&lt;name&gt;group1&lt;/name&gt;
+		&lt;rightList&gt;
+			&lt;createdOn&gt;2017-02-22T00:00:00-08:00&lt;/createdOn&gt;
+			&lt;name&gt;right1&lt;/name&gt;
+			&lt;rightId&gt;1&lt;/rightId&gt;
+			&lt;updatedOn&gt;2017-02-22T00:00:00-08:00&lt;/updatedOn&gt;
+		&lt;/rightList&gt;
+		&lt;rightList&gt;
+			&lt;createdOn&gt;2017-02-22T00:00:00-08:00&lt;/createdOn&gt;
+			&lt;name&gt;right1&lt;/name&gt;
+			&lt;rightId&gt;2&lt;/rightId&gt;
+			&lt;updatedOn&gt;2017-02-22T00:00:00-08:00&lt;/updatedOn&gt;
+		&lt;/rightList&gt;
+		&lt;updatedOn&gt;2017-02-22T00:00:00-08:00&lt;/updatedOn&gt;
+	&lt;/groupList&gt;
+	&lt;lastName&gt;Doshin&lt;/lastName&gt;
+	&lt;name&gt;Mary Ann Doshin&lt;/name&gt;
+	&lt;updatedOn&gt;2017-02-22T00:00:00-08:00&lt;/updatedOn&gt;
+	&lt;userPassword&gt;
+		&lt;createdOn&gt;2017-02-22T00:00:00-08:00&lt;/createdOn&gt;
+		&lt;password&gt;new pass&lt;/password&gt;
+		&lt;updatedOn&gt;2017-02-22T00:00:00-08:00&lt;/updatedOn&gt;
+	&lt;/userPassword&gt;
+&lt;/user&gt;
+</request>
+    <requestContent>xml</requestContent>
+    <response>resr</response>
+    <status>
+        <statusId>1</statusId>
+    </status>
+    <updatedOn>2017-02-24T00:00:00-08:00</updatedOn>
+</request>

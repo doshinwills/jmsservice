@@ -14,6 +14,8 @@ import com.doshin.service.jms.dao.model.StatusDO;
 import com.doshin.service.jms.model.QueueVO;
 import com.doshin.service.jms.model.RequestVO;
 import com.doshin.service.jms.model.StatusVO;
+import com.doshin.service.jms.processor.producer.ProducerService;
+import com.doshin.service.jms.util.JaxbMarsheller;
 
 @Service("requestBao")
 @Transactional
@@ -21,11 +23,17 @@ public class RequestBaoImpl implements RequestBao {
 
 	@Autowired
 	RequestDao requestDao;
+	
+	@Autowired
+	ProducerService producerService;
 
 	@Override
 	public RequestVO save(RequestVO request) {
 		RequestDO requestDO = getRequestDoFromVo(request);
-		return getRequestVoFromDo(requestDao.save(requestDO));
+		requestDO = requestDao.save(requestDO);
+		request = getRequestVoFromDo(requestDO);
+		producerService.sendRequest(JaxbMarsheller.marshal(request, request.getClass()));
+		return request;
 	}
 
 	@Override

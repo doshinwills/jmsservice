@@ -1,22 +1,21 @@
 <?xml version="1.0"?>
-<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <modelVersion>4.0.0</modelVersion>
-  <parent>
-    <groupId>com.doshin.service</groupId>
-    <artifactId>jmsservice</artifactId>
-    <version>1.0</version>
-  </parent>
-  <groupId>com.doshin.service</groupId>
-  <artifactId>jmsbao</artifactId>
-  <version>1.0</version>
-  <name>jmsbao</name>
-  <url>http://maven.apache.org</url>
-  <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-  </properties>
-  <dependencies>
-   	<dependency>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>com.doshin.service</groupId>
+		<artifactId>jmsservice</artifactId>
+		<version>1.0</version>
+	</parent>
+	<artifactId>jmsbao</artifactId>
+	<name>jmsbao</name>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<scope>test</scope>
@@ -149,5 +148,18 @@
 			<groupId>com.doshin.service</groupId>
 			<artifactId>jmsdao</artifactId>
 		</dependency>
-  </dependencies>
+		<dependency>
+			<groupId>com.doshin.service</groupId>
+			<artifactId>jmsprocessor</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.doshin.service</groupId>
+			<artifactId>jmsprocessor</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.doshin.service</groupId>
+			<artifactId>jmsutil</artifactId>
+		</dependency>
+
+	</dependencies>
 </project>

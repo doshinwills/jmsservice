@@ -29,6 +29,13 @@ com.doshin.service
 jmsserviceimpl
 com.doshin.service.jms.impl
 
+com.doshin.service
+jmsprocessor
+com.doshin.service.jms.processor
+
+com.doshin.service
+jmsutil
+com.doshin.service.jms.util
 
 mvn archetype:generate \
 -DarchetypeGroupId=org.apache.maven.archetypes \
