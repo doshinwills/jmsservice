@@ -33,7 +33,6 @@ public class MessagingConfiguration {
 	public ConnectionFactory connectionFactory() {
 		ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory();
 		connectionFactory.setBrokerURL(environment.getRequiredProperty("jms.brokerurl"));
-		// connectionFactory.setTrustedPackages(Arrays.asList("com.doshin.ajms"));
 		return connectionFactory;
 	}
 

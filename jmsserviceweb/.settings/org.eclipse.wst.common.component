@@ -13,6 +13,12 @@
         <dependent-module archiveName="jmsbao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsbao/jmsbao">
             <dependency-type>uses</dependency-type>
         </dependent-module>
+        <dependent-module archiveName="jmsprocessor-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsprocessor/jmsprocessor">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="jmsutil-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsutil/jmsutil">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <dependent-module archiveName="jmsdao-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/jmsdao/jmsdao">
             <dependency-type>uses</dependency-type>
         </dependent-module>

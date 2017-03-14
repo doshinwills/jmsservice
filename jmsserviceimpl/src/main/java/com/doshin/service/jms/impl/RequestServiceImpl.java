@@ -7,16 +7,24 @@ import org.springframework.beans.factory.annotation.Autowired;
 import com.doshin.service.jms.api.RequestService;
 import com.doshin.service.jms.bao.RequestBao;
 import com.doshin.service.jms.model.RequestVO;
+import com.doshin.service.jms.processor.producer.ProducerService;
+import com.doshin.service.jms.util.JaxbMarsheller;
 
 @Path("/request")
 public class RequestServiceImpl implements RequestService{
 	
 	@Autowired
 	RequestBao requestBao;
+	
+	@Autowired
+	ProducerService producerService;
 
 	@Override
 	public RequestVO save(RequestVO request) {
-		return requestBao.save(request);
+		request = requestBao.save(request);
+		producerService.sendRequest(JaxbMarsheller.marshal(request, request.getClass()));
+		return request;
+		
 	}
 
 	@Override

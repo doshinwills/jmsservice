@@ -24,15 +24,11 @@ public class RequestBaoImpl implements RequestBao {
 	@Autowired
 	RequestDao requestDao;
 	
-	@Autowired
-	ProducerService producerService;
-
 	@Override
 	public RequestVO save(RequestVO request) {
 		RequestDO requestDO = getRequestDoFromVo(request);
 		requestDO = requestDao.save(requestDO);
 		request = getRequestVoFromDo(requestDO);
-		producerService.sendRequest(JaxbMarsheller.marshal(request, request.getClass()));
 		return request;
 	}
 
